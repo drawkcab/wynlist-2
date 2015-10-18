@@ -1,4 +1,4 @@
-=/*
+/*
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
   */
@@ -12,6 +12,7 @@
     text-align: center;
   }
 
+<<<<<<< HEAD
   #companies{
     border-collapse: collapse;
     min-height: 20em; 
@@ -20,6 +21,14 @@
     margin: auto;
     padding: 0.25em;
     border: 0.25em double black
+=======
+  table {
+  	min-height: 20em;
+  	font-size: 1.5em;
+  	float: center;
+  	margin: auto;
+  	padding: 0.25em;
+>>>>>>> d30e10420b864c5a6fb43c542c94c8f31190a19e
   }
 
   table th{
@@ -28,6 +37,14 @@
   	padding: 1em;
   }
 
+<<<<<<< HEAD
+=======
+  tr {
+  	font-size: 1.5em;
+  	float: center;
+  }
+
+>>>>>>> d30e10420b864c5a6fb43c542c94c8f31190a19e
   tbody{
   	font-size: 1.5em;
   	margin: auto;
@@ -42,6 +59,7 @@
   tbody td{
   	padding: 1em;
   	font-size: 0.35em;
+<<<<<<< HEAD
     border: 0.15em solid black
   }
 
@@ -60,3 +78,6 @@
     font-style: bold;
     text-decoration: none;
   }
+=======
+  }
+>>>>>>> d30e10420b864c5a6fb43c542c94c8f31190a19e
