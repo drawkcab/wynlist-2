@@ -50,13 +50,15 @@
 
   <br>
 
-  Added on: <%= review.created_at %>
+  Added on: <%= time_ago_in_words(review.created_at) %>
 
   </p>
 
 <% end %>
 
 <h3>New Review</h3>
+
+
 <%= render 'reviews/form' %>
 
 <%= link_to 'Edit', edit_company_path(@company) %> |
