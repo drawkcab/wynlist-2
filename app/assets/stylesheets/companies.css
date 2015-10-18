@@ -2,7 +2,7 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
   */
-  body {
+  body{
   	text-align: center;
     float: center;
   }
@@ -12,12 +12,14 @@
     text-align: center;
   }
 
-  table { 
-  	min-height: 20em; 
-  	font-size: 1.5em;
-  	float: center;
-  	margin: auto;
-  	padding: 0.25em;
+  #companies{
+    border-collapse: collapse;
+    min-height: 20em; 
+    font-size: 1.5em;
+    float: center;
+    margin: auto;
+    padding: 0.25em;
+    border: 0.25em double black
   }
 
   table th{
@@ -26,18 +28,35 @@
   	padding: 1em;
   }
 
-  tr { 
-  	font-size: 1.5em;
-  	float: center;
-  }
-
   tbody{
   	font-size: 1.5em;
   	margin: auto;
   	text-align: center;
   }
 
+   tr{ 
+    font-size: 1.5em;
+    float: center;
+  }
+
   tbody td{
   	padding: 1em;
   	font-size: 0.35em;
+    border: 0.15em solid black
+  }
+
+  .button{
+    text-align: center;
+    margin: auto;
+    padding: 0.5em;
+  }
+
+  a:hover{
+    font-style: italic;
+    text-decoration: none;
+  }
+
+  a:visited{
+    font-style: bold;
+    text-decoration: none;
   }
