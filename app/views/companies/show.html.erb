@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @company.name %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @company.street %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @company.zip %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @company.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @company.state %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @company.phone %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @company.description %>
+</p>
+
+<p>
+  <strong>Service:</strong>
+  <%= @company.service %>
+</p>
+
+<h3>Reviews</h3>
+
+<% @company.reviews.each do |review| %>
+
+  <p>
+
+  <%= review.comment %>
+
+  <br>
+
+  Added on: <%= review.created_at %>
+
+  </p>
+
+<% end %>
+
+<h3>New Review</h3>
+<%= render 'reviews/form' %>
+
+<%= link_to 'Edit', edit_company_path(@company) %> |
+<%= link_to 'Back', companies_path %>
