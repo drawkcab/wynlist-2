@@ -44,9 +44,11 @@
 
 <% @company.reviews.each do |review| %>
 
+  <%= review.show_stars %>
+
   <p>
 
-  <%= review.comment %>
+  <%= review.coment %>
 
   <br>
 

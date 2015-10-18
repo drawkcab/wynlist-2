@@ -16,6 +16,11 @@
     <%= f.text_area :coment %>
   </div>
 
+  <div class="field">
+    <%= f.label :stars %><br>
+    <%= f.number_field :stars %>
+  </div>
+
   <% if @company.nil? %>
 
     <div class="field">
