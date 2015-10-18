@@ -1,43 +1,47 @@
 /*
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
-*/
-body {
-	background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzBA_oLnUFu2nJHEXA6KxEhTcn_7PChACHn329ETffNBrEKt5_9Q);
-	font-family: "Garamond", "Book Antiqua", Palatino, serif;
-	color: #4c221b;
-	text-align: center;
-	font-size: 1.15em;
-}
+  */
+  body {
+  	text-align: center;
+  }
 
-header{
-	font-size: 2.5em;
-}
+  body h1{
+  	font-size: 4em;
+  }
 
-article {
-	text-align: center;
-	font-size: 1.5em;
-}
+  table { 
+  	min-height: 20em; 
+  	font-size: 1.5em;
+  	float: center;
+  	margin: auto;
+  	padding: 0.25em;
+  }
 
-table { 
- 	min-height: 200px; 
- 	background-color: #ff2121;
- 	font-style: bold;
- 	font-size: 1.25em;
- 	color: #4c221b;
- 	
- }
+  table th{
+  	font-size: 1em;
+  	margin: auto;
+  	padding: 1em;
+  }
 
- tr { 
- 	background-color: #ffb3a7; 
- 	padding: 50px 0; 
- 	font-style: bold;
- 	font-size: 1.25em;
- }
+  tr { 
+  	font-size: 1.5em;
+  	float: center;
+  }
 
-tbody {
-	background-color: #ebebeb; 
- 	padding: 50px 0; 
- 	font-style: bold;
- 	font-size: 1.5em;
-}
+  tbody{
+  	font-size: 1.5em;
+  	margin: auto;
+  	text-align: center;
+  }
+
+  tbody td{
+  	padding: 1em;
+  	font-size: 0.35em;
+  }
+
+  .button{
+  	color: #bbbbbb;
+  	width: 200px;
+  	height: 100px;
+  }
