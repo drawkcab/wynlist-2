@@ -2,3 +2,42 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+body {
+	background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzBA_oLnUFu2nJHEXA6KxEhTcn_7PChACHn329ETffNBrEKt5_9Q);
+	font-family: "Garamond", "Book Antiqua", Palatino, serif;
+	color: #4c221b;
+	text-align: center;
+	font-size: 1.15em;
+}
+
+header{
+	font-size: 2.5em;
+}
+
+article {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+table { 
+ 	min-height: 200px; 
+ 	background-color: #ff2121;
+ 	font-style: bold;
+ 	font-size: 1.25em;
+ 	color: #4c221b;
+ 	
+ }
+
+ tr { 
+ 	background-color: #ffb3a7; 
+ 	padding: 50px 0; 
+ 	font-style: bold;
+ 	font-size: 1.25em;
+ }
+
+tbody {
+	background-color: #ebebeb; 
+ 	padding: 50px 0; 
+ 	font-style: bold;
+ 	font-size: 1.5em;
+}
