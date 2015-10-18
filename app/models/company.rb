@@ -5,4 +5,5 @@ class Company < ActiveRecord::Base
   validates :phone, length: { is: 7}
   has_many :reviews
 
+
 end
