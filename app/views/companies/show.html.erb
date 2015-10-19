@@ -26,6 +26,7 @@
 </p>
 <p>
   <strong> Map </strong>
+  <br>
   <a href="https://www.google.com/maps/dir//<%= @company.address %>/"><img src="http://maps.googleapis.com/maps/api/staticmap?center=<%= @company.address %>&zoom=16&scale=false&size=600x300&maptype=roadmap&key=AIzaSyAyfGGtwAieRMJuCxE72yQ9Bh-FbpL4jrM&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C<%= @company.address %>" alt="Google Map"></a>
 </p>
 <p>
@@ -61,10 +62,14 @@
 
 <% end %>
 
+
+
 <h3>New Review</h3>
 
 
 <%= render 'reviews/form' %>
+
+
 
 <%= link_to 'Edit', edit_company_path(@company) %> |
 <%= link_to 'Back', companies_path %> |
