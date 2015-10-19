@@ -6,6 +6,13 @@
 
 /* Global Styles */
 
+h1 {
+  color: blue;
+
+
+
+}
+
 html,
 body {
     width: 100%;
