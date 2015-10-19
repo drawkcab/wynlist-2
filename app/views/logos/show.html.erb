@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @logo.url %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @logo.description %>
+</p>
+
+<p>
+  <strong>Companyid:</strong>
+  <%= @logo.companyID %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @logo.company %>
+</p>
+
+<%= link_to 'Edit', edit_logo_path(@logo) %> |
+<%= link_to 'Back', logos_path %>
