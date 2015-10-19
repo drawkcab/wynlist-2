@@ -17,7 +17,7 @@
   <tbody>
     <% @logos.each do |logo| %>
       <tr>
-        <td><%= logo.url %></td>
+        <td><%= image_tag logo.url %></td>
         <td><%= logo.description %></td>
         <td><%= logo.companyID %></td>
         <td><%= logo.company.name %></td>
