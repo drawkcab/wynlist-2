@@ -11,7 +11,6 @@ class CompaniesController < ApplicationController
   # GET /companies/1.json
   def show
     @review = Review.new
-    @logo = Logo.new
   end
 
   # GET /companies/new
@@ -71,6 +70,6 @@ class CompaniesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def company_params
-      params.require(:company).permit(:name, :street, :zip, :city, :state, :phone, :description, :service)
+      params.require(:company).permit(:name, :street, :zip, :city, :state, :phone, :description, :service, :logo)
     end
 end
