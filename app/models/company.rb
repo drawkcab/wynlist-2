@@ -4,6 +4,7 @@ class Company < ActiveRecord::Base
   validates :zip, length: { is: 5}
   validates :phone, length: { is: 7}
   has_many :reviews, :dependent => :delete_all
+  has_one :logo
 
   def address
     s = street.strip

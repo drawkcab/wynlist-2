@@ -11,6 +11,7 @@ class CompaniesController < ApplicationController
   # GET /companies/1.json
   def show
     @review = Review.new
+    @logo = Logo.new
   end
 
   # GET /companies/new
