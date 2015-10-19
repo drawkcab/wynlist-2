@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= f.label :stars %><br>
-    <%= f.number_field :stars %>
+    <%= f.select :stars, [['5','5'],['4','4'],['3','3'],['2','2'],['1','1']]%>
   </div>
 
   <% if @company.nil? %>
