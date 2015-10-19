@@ -1,6 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <div id="logo">
+    <strong>Logo:</strong>
+    <%= image_tag @company.logo %>
+  </div>
+</p>
+
+<p>
   <strong>Name:</strong>
   <%= @company.name %>
 </p>
@@ -40,7 +47,7 @@
 </p>
 
 <p>
-  <strong>Service:</strong>
+  <strong>Service:</strong>z
   <%= @company.service %>
 </p>
 
@@ -49,7 +56,6 @@
   <%= @company.service %>
 </p>
 
-<a href="../logos/new" class="btn btn-info btn-lg">Add Company Logo</h3></a>
 
 
 
