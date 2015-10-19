@@ -1,3 +1,7 @@
+.wynlist {
+  font-family: 'Audiowide', cursive;
+}
+
 body { background-color: #fff; color: #333; }
 
 body, p, ol, ul, td {

@@ -41,8 +41,10 @@
   </div>
   <div class="field">
     <%= f.label :service %><br>
-    <%= f.text_field :service %>
+    <%= f.select :service, [['AC and HVAC','AC and HVAC'],['Home Cleaning','Home Cleaning'],['Landscaping','Landscaping'],['Painting','Painting'],['Handyman','Handyman'],['Home Automation','Home Automation'],['Organization','Organization'],['Lawn Care','Lawn Care'],['Remodeling','Remodeling']] %>
   </div>
+
+
   <div class="actions">
     <%= f.submit %>
   </div>
