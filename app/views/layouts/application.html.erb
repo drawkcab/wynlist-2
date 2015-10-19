@@ -17,9 +17,16 @@
 <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <h1 class="wynlist"> Wynlist </h1>
+  <div id='cssmenu'>
+  <ul>
+     <li class='active'><a href='/'><span>Home</span></a></li>
+     <li><a href='#'><span>Products</span></a></li>
+     <li><a href='./companies/'><span>Companies</span></a></li>
+     <li class='last'><a href='#'><span>Contact</span></a></li>
+  </ul>
+  </div>
 
-<img alt="Rails" src="../assets/images/logo.png" />
+  <h1 class="wynlist"> Wynlist </h1>
 
 <%= yield %>
 
