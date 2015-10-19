@@ -12,7 +12,7 @@
 
 <p>
   <strong>Zip:</strong>
-  <%= @company.display_zip %>
+  <%= @company.zip %>
 </p>
 
 <p>
@@ -24,7 +24,10 @@
   <strong>State:</strong>
   <%= @company.state %>
 </p>
-
+<p>
+  <strong> Map </strong>
+  <a href="https://www.google.com/maps/dir//<%= @company.address %>/"><img src="http://maps.googleapis.com/maps/api/staticmap?center=<%= @company.address %>&zoom=16&scale=false&size=600x300&maptype=roadmap&key=AIzaSyAyfGGtwAieRMJuCxE72yQ9Bh-FbpL4jrM&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C<%= @company.address %>" alt="Google Map"></a>
+</p>
 <p>
   <strong>Phone:</strong>
   <%= @company.phone %>
