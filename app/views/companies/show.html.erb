@@ -47,13 +47,17 @@
 <% end %>
   <h3>New Review</h3>
 
+
+  <%= image_tag @company.reviews.average(:stars).to_i.to_s+"star.png"%>
+  <%=  "("+@company.reviews.count.to_s+")"%>
+
   <%= render 'reviews/form' %>
 
-                    
-        </div>
 
     </div>
-  
+
+    </div>
+
 <div class="col-md-9">
 <p>
   <strong> Map </strong>
