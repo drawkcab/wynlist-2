@@ -9,8 +9,13 @@
 h1 {
   color: blue;
 
+}
 
-
+.header {
+    color: #d6d6d6;
+    text-shadow: .15em .15em .5em #000;
+    /*text-shadow: 3px 3px 10px #000;*/
+    font-size: 1.15em;
 }
 
 html,
@@ -244,3 +249,10 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
+.row {
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+}
+
