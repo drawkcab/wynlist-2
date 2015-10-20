@@ -1,10 +1,8 @@
-<body>
-
 <p id="notice"><%= notice %></p>
-
-<h1>Companies</h1>
-
-<table id="companies">
+<br><br>
+<div class="container">
+  <center><h1>Companies</h1></center>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Name</th>
@@ -22,15 +20,13 @@
         <td><%= company.phone %></td>
         <td><%= company.description %></td>
         <td><%= company.service %></td>
-        <td><%= link_to 'Show', company %> <%= link_to 'Edit', edit_company_path(company) %></td>
+        <td><%= link_to 'Show', company, :class =>"btn btn-sm btn-info" %> <%= link_to 'Edit', edit_company_path(company), :class =>"btn btn-sm btn-info" %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+</div>
 
 <br>
 
-<%= link_to 'New Company', new_company_path, :class => "btn btn-default" %>
-
-
-</body>
+<center><%= link_to 'New Company', new_company_path, :class => "btn btn-default" %></center>
