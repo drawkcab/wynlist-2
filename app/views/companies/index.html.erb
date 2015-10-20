@@ -10,6 +10,7 @@
       <th>Phone</th>
       <th>Description</th>
       <th>Service</th>
+      <th>Avg Rating</th>
       <th>Options</th>
     </tr>
   </thead>
@@ -22,6 +23,7 @@
         <td><%= number_to_phone company.phone %></td>
         <td><%= company.description %></td>
         <td><%= company.service %></td>
+        <td><span class="row"><%= image_tag company.avg_star %> <%= company.num_review %></span></td>
         <td><%= link_to 'Show', company, :class =>"btn btn-sm btn-info" %> <%= link_to 'Edit', edit_company_path(company), :class =>"btn btn-sm btn-info" %></td>
       </tr>
     <% end %>

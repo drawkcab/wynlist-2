@@ -11,12 +11,17 @@ class Company < ActiveRecord::Base
     street+", "+city+", "+state+" "+zip.to_s
   end
 
-  def increment_review
-
+  def avg_star
+    if reviews.average(:stars) == 0 || reviews.average(:stars) == nil then
+       "5star.png"
+     else
+      reviews.average(:stars).to_i.to_s+"star.png"
+    end
   end
 
-  def review_total
-    Review.count(:conditions => ["company_id = ?", @company.id])
+  def num_review
+    "("+reviews.count.to_s+")"
   end
+
 
 end
