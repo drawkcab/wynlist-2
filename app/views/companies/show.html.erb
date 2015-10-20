@@ -2,47 +2,61 @@
 <p id="notice"><%= notice %></p>
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Page Content -->
-    <div class="col-md-12 text-center"><%= @company.name %></div>
+  <!-- Page Content -->
+  <div class="col-md-12 text-center"><%= @company.name %></div>
     <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-3 text-center">
-                <p class="lead">Company Location</p>
-                <table class="table">
-                    <a href="#" class="list-group-item"><%= @company.street %> </a>
-                    <a href="#" class="list-group-item"><%= @company.zip %> </a>
-                    <a href="#" class="list-group-item"><%= @company.city %> , <%= @company.state %> </a>
-                </table>
+          <div class="col-md-3">
+            <p class="lead">Company Location</p>
+            <table class="table table-bordered">
+    <tbody>
+        <tr>
+            <td><center><strong><%= number_to_phone @company.service %></strong></center></td>
+        </tr>
+        <tr>
+            <td><%= @company.street %></td>
+        </tr>
+        <tr>
+            <td><%= @company.city %> , <%= @company.state %></td>
+        </tr>
+        <tr>
+            <td><%= @company.zip %></td>
+        </tr>
+        <tr>
+            <td><%= number_to_phone @company.phone %></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+  <div class="col-md-9">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+      <div class="item active">
+      <img class="first-slide" src="http://i.imgur.com/EExrIfI.jpg" alt="background">
+      <div class="container">
+      <div class="carousel-caption">
+      <h1><%= image_tag @company.logo %></h1>
+                    </div>
+                  </div>
+                </div>
             </div>
 
-            <div class="col-md-9">
-              <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner" role="listbox">
-              <div class="item active">
-              <img class="first-slide" src="http://i.imgur.com/EExrIfI.jpg" alt="background">
-              <div class="container">
-              <div class="carousel-caption">
-              <h1><%= image_tag @company.logo %></h1>
-            </div>
-          </div>
-        </div>
-    </div>
+  <div class="well">
+    <center><h3>Company Description</h3></center>
+     <p><%= @company.description %></p>
+    <hr>
+    <p>
+  <div class="map">
+  <center>
+  <a href="https://www.google.com/maps/dir//<%= @company.address %>/"><img src="http://maps.googleapis.com/maps/api/staticmap?center=<%= @company.address %>&zoom=16&scale=false&size=600x300&maptype=roadmap&key=AIzaSyAyfGGtwAieRMJuCxE72yQ9Bh-FbpL4jrM&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C<%= @company.address %>" alt="Google Map"></a>
+  </center></div>
 
-                <div class="well">
-                  <h3>Company Description</h3>
-                  <p><%= @company.description %></p>
-
-                  <center><h3>Company Reviews</h3></center>
-                  <hr>
-
-<% @company.reviews.each do |review| %>
+  <center><h3>Company Reviews</h3></center> 
+  <% @company.reviews.each do |review| %>
   <%= image_tag review.show_stars %>
   <p>
   <strong><%= review.coment %></strong>
   <br>
-  Added on: <%= time_ago_in_words(review.created_at) %>
+  Added on: <%= time_ago_in_words(review.created_at) %> ago
   </p>
 <% end %>
   <h3>New Review</h3>
@@ -55,16 +69,6 @@
     </div>
   
 <div class="col-md-9">
-<p>
-  <strong> Map </strong>
-  <br>
-  <a href="https://www.google.com/maps/dir//<%= @company.address %>/"><img src="http://maps.googleapis.com/maps/api/staticmap?center=<%= @company.address %>&zoom=16&scale=false&size=600x300&maptype=roadmap&key=AIzaSyAyfGGtwAieRMJuCxE72yQ9Bh-FbpL4jrM&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C<%= @company.address %>" alt="Google Map"></a>
-</p>
-
-<p>
-  <strong>Service:</strong>
-  <%= @company.service %>
-</p>
 
 <p>
 <!--<strong>CompanyID:</strong>

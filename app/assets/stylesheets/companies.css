@@ -21,3 +21,11 @@ body > div.col-md-12.text-center {
     height: 350px;
     border: 2px solid black;
 }
+
+#myCarousel > div.well > div > center > a > img {
+  border: 1px solid black; 
+}
+
+#myCarousel > div.well > div {
+  height: 350px;
+}
