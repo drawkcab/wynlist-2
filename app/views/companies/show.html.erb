@@ -70,9 +70,8 @@
 <!--<strong>CompanyID:</strong>
   <%= @company.service %>
 </p>-->
-
+<div class="text-center">
 <%= link_to 'Edit', edit_company_path(@company) %> |
 <%= link_to 'Back', companies_path %> |
 <%= link_to 'Destroy', @company, method: :delete, data: { confirm: 'Are you sure?' } %>
-
 </div>
