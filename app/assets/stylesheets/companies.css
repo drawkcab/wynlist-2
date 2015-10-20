@@ -10,8 +10,8 @@ body > div.col-md-12.text-center {
 #myCarousel > div.carousel-inner > div > div > div > h1 > img {
 
   height: 170px;
-  border-radius: 50%;
-  border: 5px solid black;
+  border-radius: 10%;
+  border: 3px solid black;
 
 }
 
@@ -20,4 +20,43 @@ body > div.col-md-12.text-center {
     width: 900px;
     height: 350px;
     border: 2px solid black;
+}
+
+#myCarousel > div.well > div > center > a > img {
+  border: 1px solid black; 
+}
+
+#myCarousel > div.well > div {
+  height: 350px;
+}
+
+body > div.container > table > tbody > tr:nth-child(n) > td:nth-child(n) > img {
+  
+  height: 40px;
+  border: 1px solid black;
+  margin-top: 10px; 
+}
+
+body > div.container > table > tbody > tr:nth-child(n) > td:nth-child(2) {
+  width: 120px;
+  padding-top: 20px;
+}
+
+body > div.container > table > tbody > tr:nth-child(n) > td:nth-child(3) {
+  width: 120px;
+  padding-top: 20px;
+}
+
+body > div.container > table > tbody > tr:nth-child(n) > td:nth-child(4) {
+  padding-top: 20px;
+}
+
+body > div.container > table > tbody > tr:nth-child(n) > td:nth-child(5 ) {
+  padding-top: 20px;
+}
+
+
+body > div.container > table > tbody > tr:nth-child(n) > td:nth-child(6) {
+  width: 200px;
+  padding-top: 20px;
 }

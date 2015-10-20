@@ -2,7 +2,7 @@ class Company < ActiveRecord::Base
   validates :name, :street, :city, :state, :zip, :service, presence: true
   validates :zip, :phone, numericality: {only_integer: true, greater_than: 0}
   validates :zip, length: { is: 5}
-  validates :phone, length: { is: 7}
+  validates :phone, length: { is: 10}
   has_many :reviews, :dependent => :delete_all
 
 
