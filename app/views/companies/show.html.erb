@@ -1,90 +1,78 @@
+
 <p id="notice"><%= notice %></p>
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Page Content -->
+    <div class="col-md-12 text-center"><%= @company.name %></div>
+    <div class="container">
 
-<p>
-  <div id="logo">
-    <strong>Logo:</strong>
-    <%= image_tag @company.logo %>
-  </div>
-</p>
+        <div class="row">
 
-<p>
-  <strong>Name:</strong>
-  <%= @company.name %>
-</p>
+            <div class="col-md-3 text-center">
+                <p class="lead">Company Location</p>
+                <table class="table">
+                    <a href="#" class="list-group-item"><%= @company.street %> </a>
+                    <a href="#" class="list-group-item"><%= @company.zip %> </a>
+                    <a href="#" class="list-group-item"><%= @company.city %> , <%= @company.state %> </a>
+                </table>
+            </div>
 
-<p>
-  <strong>Street:</strong>
-  <%= @company.street %>
-</p>
+            <div class="col-md-9">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+              <div class="item active">
+              <img class="first-slide" src="http://i.imgur.com/EExrIfI.jpg" alt="background">
+              <div class="container">
+              <div class="carousel-caption">
+              <h1><%= image_tag @company.logo %></h1>
+            </div>
+          </div>
+        </div>
+    </div>
 
-<p>
-  <strong>Zip:</strong>
-  <%= @company.zip %>
-</p>
+                <div class="well">
+                  <h3>Company Description</h3>
+                  <p><%= @company.description %></p>
 
-<p>
-  <strong>City:</strong>
-  <%= @company.city %>
-</p>
+                  <center><h3>Company Reviews</h3></center>
+                  <hr>
 
-<p>
-  <strong>State:</strong>
-  <%= @company.state %>
-</p>
+<% @company.reviews.each do |review| %>
+  <%= image_tag review.show_stars %>
+  <p>
+  <strong><%= review.coment %></strong>
+  <br>
+  Added on: <%= time_ago_in_words(review.created_at) %>
+  </p>
+<% end %>
+  <h3>New Review</h3>
+
+  <%= render 'reviews/form' %>
+
+                    
+        </div>
+
+    </div>
+  
+<div class="col-md-9">
 <p>
   <strong> Map </strong>
   <br>
   <a href="https://www.google.com/maps/dir//<%= @company.address %>/"><img src="http://maps.googleapis.com/maps/api/staticmap?center=<%= @company.address %>&zoom=16&scale=false&size=600x300&maptype=roadmap&key=AIzaSyAyfGGtwAieRMJuCxE72yQ9Bh-FbpL4jrM&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C<%= @company.address %>" alt="Google Map"></a>
 </p>
-<p>
-  <strong>Phone:</strong>
-  <%= @company.phone %>
-</p>
 
 <p>
-  <strong>Description:</strong>
-  <%= @company.description %>
-</p>
-
-<p>
-  <strong>Service:</strong>z
+  <strong>Service:</strong>
   <%= @company.service %>
 </p>
 
 <p>
-<strong>CompanyID:</strong>
+<!--<strong>CompanyID:</strong>
   <%= @company.service %>
-</p>
-
-
-
-
-<h3>Reviews</h3>
-
-<% @company.reviews.each do |review| %>
-
-  <%= image_tag review.show_stars %>
-
-  <p>
-
-  <%= review.coment %>
-
-  <br>
-
-  Added on: <%= time_ago_in_words(review.created_at) %>
-
-  </p>
-
-<% end %>
-
-
-<h3>New Review</h3>
-
-
-<%= render 'reviews/form' %>
-
-
+</p>-->
 
 <%= link_to 'Edit', edit_company_path(@company) %> |
 <%= link_to 'Back', companies_path %> |
 <%= link_to 'Destroy', @company, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+</div>
