@@ -24,7 +24,11 @@
    padding: 0;
    line-height: 1;
    display: block;
-   zoom: 1;
+  zoom: 1;
+  color: white;
+  font-size: 20px;
+  border-right: 20px;
+}
  }
  #cssmenu ul:after {
    content: " ";
@@ -132,4 +136,13 @@
    #cssmenu ul li a:before {
      display: none;
    }
+   #top > div > h1 {
+    color: white;
+    text-shadow: 3px 5px rgba(8, 8, 8, 0.58);
+   }
+
+
+
  }
+
+
