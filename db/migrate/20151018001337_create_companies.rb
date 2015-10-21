@@ -6,7 +6,7 @@ class CreateCompanies < ActiveRecord::Migration
       t.integer :zip
       t.string :city
       t.string :state
-      t.integer :phone
+      t.string :phone
       t.text :description
       t.string :service
 
