@@ -13,7 +13,8 @@
  *= require_tree .
  *= require_self
  */
- @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
+
  #cssmenu {
    background: #337AB7;
    width: auto;
@@ -29,7 +30,7 @@
   font-size: 20px;
   border-right: 20px;
 }
- }
+ 
  #cssmenu ul:after {
    content: " ";
    display: block;
@@ -140,9 +141,3 @@
     color: white;
     text-shadow: 3px 5px rgba(8, 8, 8, 0.58);
    }
-
-
-
- }
-
-
