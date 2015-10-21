@@ -266,3 +266,22 @@ footer {
 div h3{
   text-align: center;
 }
+
+body > div.container > div:nth-child(1) > h1 {
+  margin-top: 100px;
+}
+
+body > div.container > div:nth-child(1) > p {
+  padding: 0 300px 0 300px;
+  margin-bottom: 100px;
+}
+
+body > div.container > div:nth-child(n) > img {
+  height: 150px;
+  margin-left: 105px;
+  border-radius: 10px;
+}
+
+body > div.container > div:nth-child(6) > h2 {
+  margin-top: 50px;
+}
